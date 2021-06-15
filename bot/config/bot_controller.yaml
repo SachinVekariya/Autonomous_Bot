@@ -1,0 +1,14 @@
+controller_joint_names: ['right_wheel_hinge', 'left_wheel_hinge']
+bot:
+  joint_state_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 20
+
+  wheel_r:
+      type: effort_controllers/JointEffortController
+      joint: right_wheel_hinge
+      
+  wheel_l:
+      type: effort_controllers/JointEffortController
+      joint: left_wheel_hinge
+      

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+<!-- output="screen" -->
+ <node pkg="bot" type="multiple_g2g.py" name="multiple_goal_g2g_node" />
+ <node pkg="bot" type="gps_data_conversion_multiple_goal.py" name="gps_converter"/>
+ <node pkg="bot" type="g2g_for_obavoid.py" name="g2g_x_z"/>
+ <node pkg="bot" type="ultrasonic_msg.py" name="ultrasonic_data"/>
+ <node pkg="bot" type="obavoid5.py" name="ob_avoid5"/>
+ <node pkg="bot" type="g2g_with_obavoid.py" name="g2g_with_obavoid"/>
+ <node pkg="bot" type="gui_msg.py" name="gui_messages"/>
+</launch>
